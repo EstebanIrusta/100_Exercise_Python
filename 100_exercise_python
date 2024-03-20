@@ -1,0 +1,237 @@
+#1.1
+print('Bienvenidos al Curso de Programacion')
+
+#1.2
+cadena = 'Hola Mundo'
+print(cadena)
+
+#1.3
+nombre = input('¿Cual es tu Nombre?')
+print(f'Hola {nombre}')
+
+#1.4
+num1 = int(input('Ingrese un numero'))
+num2 = int(input('Ingrese un numero'))
+if num2 != 0:
+    print(f'{num1} + {num2} = {num1 + num2}')
+    print(f'{num1} - {num2} = {num1 - num2}')
+    print(f'{num1} * {num2} = {num1 * num2}')
+    print(f'{num1} // {num2} = {num1 // num2}')
+else:
+    print('no puede realizarse la operacion')
+
+#1.5
+num = int(input('ingrese un numero entero: '))
+print(f'el doble de {num} es: {num*2}')
+
+#1.6
+age = int(input('ingrese su edad: '))
+print(f'su edad de {age} dentro de 23 años va a ser de {age+23} años')
+
+#1.7
+precio_sin_iva = int(input('ingresa un precio:$'))
+print(f'${precio_sin_iva} con el IVA agregado es de: {precio_sin_iva//1.21}')
+
+#1.8
+precio = int(input('ingrese un precio:$'))
+descuento = precio*0.09
+precio_final = precio - descuento
+print(f'el descuento del 9% a ${precio} es de:${precio_final}')
+
+#1.9
+cant_manzanas = int(input('ingresa cantidad de manzanas: '))
+division_frutas = cant_manzanas//3
+print(f'los 3 chicos van a recibir {division_frutas} manzanas cada uno')
+
+#1.11
+horas_trabajadas = int(input('ingresa la cant de horas trabajadas:'))
+costo_x_hora = int(input('cuanto es el coste por hora? '))
+paga = horas_trabajadas*costo_x_hora
+print(f'la paga que te corresponde es de: ${paga}')
+
+#1.12
+num = int(input('ingrese un numero: '))
+if num >= 0:
+    print(f'{num} es positivo')
+else:
+    print(f'{num} es negativo')
+
+
+#1.13
+num = int(input('ingrese un numero: '))
+if num %2 == 0:
+    print(f'{num} es par')
+else:
+    print(f'{num} es impar')
+
+#1.14
+num = int(input('ingrese un numero: '))
+if num % 5 == 0:
+    print(f'{num} es multiplo de 5')
+else:
+    print(f'{num} no es multiplo de 5')
+
+
+#1.15
+num = int(input('ingrese un numero: '))
+num2 = int(input('ingrese un numero: '))
+if num %3 == 0:
+    print(f'{num} es divisible por 3')
+else:
+    print(f'{num} no es divisible por 3')
+
+if num2 % 3 == 0:
+    print(f'{num2} es divisible por 3')
+else:
+    print(f'{num2} no es divisible por tres')
+       
+
+#1.16
+letra = input('ingrese una letras')
+print(letra)
+
+
+#1.17
+letra = input('ingrese una letra')
+letra2 = input('ingrese otra letra')
+
+if letra < letra2:
+    print(letra)
+else:
+    print(letra2)
+if letra > letra2:
+    print(letra)
+else:
+    print(letra2)
+
+#1.18
+decimal = float(input('ingrese un decimal:'))
+print(f'{decimal + 15/2}')
+
+#1.19
+zapatillas = int(input('ingresa la cant de pares de zapatillas existentes:'))
+pares_extras= int(input('ingresa los pares extras q llegaron:'))
+print(f'tiene en total {zapatillas+pares_extras} pares de zapas')
+
+#1.20
+num = int(input('ingresa un numero:'))
+if num %2 == 0:
+    print('es par')
+else:
+    print('no es par')
+
+#1.21
+decimal= float(input('ingresar un decimal'))
+print(f'incremento del 10% : {decimal*1.10}')
+
+#1.22
+precio1 = int(input('ingresa un precio'))
+precio2 = int(input('ingresa otr precio'))
+precio3 = int(input('ingresa otro precio'))
+if precio1 < precio2 and precio2 < precio3:
+    print(f'{precio1}, {precio2} y {precio3} estan ordenados de menor a mayor')
+else:
+    print(f'{precio1}, {precio2} y {precio3} estan desordenados')
+
+#1.23
+ferrari = float(input('ingresa el tiempo registrado del ferrari'))
+redbull = float(input('ingresa el tiempo registrado del redbull'))
+if ferrari < redbull:
+    print('ferrari llego primero')
+else:
+    print('redbull llego primero')
+
+#1.25
+int1 = int(input('ingrese un numero entero:'))
+int2 = int(input('ingrese un numero entero:'))
+int3 = int(input('ingrese un numero entero:'))
+producto= int1*int2*int3
+suma = int1+int2+int3
+if int1 < 0:
+    print(f'el producto de los 3 numeros es: {producto}')
+else:
+    print(f'la suma de la 3 variables es: {suma}')
+
+#1.26
+base = int(input('ingrese la base del triangulo'))
+altura = int(input('ingrese la altura del triangulo'))
+area = 0.5 * base * altura
+print(f'la superficie del triangulo es de {area}')
+
+#1.27
+num1 = int(input('dime un numero'))
+num2 = int(input('dime un numero'))
+if num1 < num2:
+    print(f'{num1} es menor a {num2}')
+else:
+    print(f'{num2} es menor a {num1}')
+
+#1.28
+radio = 5
+circunferencia = 2*3.14159*radio
+area_circulo = 3.14159*radio**2
+print(f'la circunferencia es de{circunferencia}')
+print(f'el area del circulo es de{area_circulo}')
+
+#1.29
+cateto1 = int(input('ingresa x pantalla el cateto'))
+cateto2 = int(input('ingresa x pantalla el otro cateto'))
+hipotenusa = cateto1**2 + cateto2**2
+print('la hipotenusa de un triangulo rectangulo es',hipotenusa)
+
+#1.30
+horas_trabajadas = int(input('ingresa las horas trabajdas'))
+valor_por_hora = int(input('ingresa el valor por hora'))
+pago = horas_trabajadas*valor_por_hora
+if horas_trabajadas >= 40:
+    print(f'tu tarifa se incrementa un 50% por hacer hs extra:${pago*1.50}')
+else:
+    print(f'tu tarifa sigue igual por no hacer hs extra ${pago}')
+
+#1.31
+num1 = int(input('ingresa un valor'))
+num2 = int(input('ingresa un valor'))
+
+print('num1 = ', num1)
+print('num2 =', num2)
+intercambio = num1
+num1 = num2
+num2 = intercambio
+
+print('num1 =', num1)
+print('num2 =', num2)
+
+#1.32
+lado1 = int(input('ingresa un lado'))
+lado2 = int(input('ingresa un lado'))
+lado3 = int(input('ingresa un lado'))
+
+if lado1 + lado2 > lado3 and lado1 + lado3 > lado2 and lado2 + lado3 > lado1:
+    print('es un triangulo')
+
+    if lado1 == lado2 and lado2 == lado3:
+        print('es equilatero')
+    elif lado1 != lado2 and lado1 != lado3 and lado2 != lado3:
+        print('es escaleno')
+    elif lado1 == lado2 or  lado1 == lado3 or lado2== lado3:
+        print('es isoceles')
+else:
+    print('no es un triangulo')
+
+#1.33
+nombre = input('ingrese su nombre')
+antiguedad = int(input('ingrese su antiguedad en años'))
+cant_hs_trabajadas = int(input('ingrese cantidad de horas trabajadas'))
+valor_hora = int(input('cual es el valor hora de trabajo'))
+subtotal = cant_hs_trabajadas*valor_hora
+calculo = subtotal + antiguedad*30
+calculo_descuento = 0.13*calculo
+calculo_descuento2 = calculo-calculo_descuento
+
+print('RECIBO DEL EMPLEADO:')
+print('nombre del empleado:',nombre)
+print('antiguedad del empleado', antiguedad)
+print('el valor hora es',valor_hora)
+print('total a cobrar bruto', subtotal)
+print('el total de descuento es',calculo_descuento)
+print('el valor neto a cobrar es', calculo_descuento2)
